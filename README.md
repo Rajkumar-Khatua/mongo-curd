@@ -1,4 +1,4 @@
-#  REST API with Node.js and Express
+# REST API with Node.js and Express
 
 ## UserProfileAPI
 
@@ -18,17 +18,17 @@ The API is built on the MVC architecture to ensure a separation of concerns. Mod
 ## Getting Started
 
 Pre-requisites:
+
 - Node.js
 - MongoDB
 - NPM or Yarn (Node Package Manager or Yarn Package Manager)
-
 
 ## Installation
 
 1. Clone the repository
 
 ```bash
-git clone 
+git clone
 ```
 
 2. Install dependencies
@@ -46,15 +46,16 @@ npm start
 ## Usage
 
 The API can be accessed at http://localhost:3000/api/users
+Also find deployed URL at https://mongo-curd.vercel.app/users
 
 Endpoints:
 
-| Method | Endpoint      | Description                   | Body                                                                                                             |
-|--------|---------------|-------------------------------|------------------------------------------------------------------------------------------------------------------|
-| GET    | /users        | Fetch all user profiles       | N/A                                                                                                              |
-| POST   | /users        | Create a new user profile     | { "name": "John Doe", "email": "john@example.com", "age": 30, "country": "USA", "password": "password123" }    |
-| PUT    | /users/:id    | Update an existing user profile | { "name": "Jane Doe", "email": "jane@example.com", "age": 25, "country": "Canada" }                             |
-| DELETE | /users/:id    | Delete an existing user profile | N/A                                                                                                              |
+| Method | Endpoint   | Description                     | Body                                                                                                        |
+| ------ | ---------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| GET    | /users     | Fetch all user profiles         | N/A                                                                                                         |
+| POST   | /users     | Create a new user profile       | { "name": "John Doe", "email": "john@example.com", "age": 30, "country": "USA", "password": "password123" } |
+| PUT    | /users/:id | Update an existing user profile | { "name": "Jane Doe", "email": "jane@example.com", "age": 25, "country": "Canada" }                         |
+| DELETE | /users/:id | Delete an existing user profile | N/A                                                                                                         |
 
 ## Sample Data for Testing
 
@@ -83,9 +84,11 @@ Update an existing user profile:
   "country": "Canada"
 }
 ```
+
 Get all user profiles:
 
 - GET /users
+
 ```bash
 N/A
 ```
@@ -93,7 +96,13 @@ N/A
 Delete an existing user profile:
 
 - DELETE /users/<user-id>
+
 ```bash
 N/A
 ```
 
+## Live Deployed Endpoint
+
+You can access the API via the following live deployed endpoint:
+
+[https://mongo-curd.vercel.app/users](https://mongo-curd.vercel.app/users)
